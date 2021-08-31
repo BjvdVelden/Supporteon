@@ -13,7 +13,7 @@ class databaseTest {
     @Test
     void addAccount() {
 
-        account test = new account("test", "test", "test@test");
+        account test = new account("test", "test");
         database.getInstance().addAccount(test);
         ArrayList<account>testdata = database.getInstance().getAccounts();
 
@@ -26,7 +26,7 @@ class databaseTest {
     }
     @Test
     void addContentAccount(){
-        contentcreatorAccount test2 = new contentcreatorAccount("test", "test", "test@test");
+        contentcreatorAccount test2 = new contentcreatorAccount("test", "test");
         database.getInstance().addcontentAccount(test2);
         ArrayList<contentcreatorAccount>data = database.getInstance().getContentAccounts();
 

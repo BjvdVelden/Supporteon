@@ -19,20 +19,20 @@ public class database {
         this.accounts = new ArrayList<>();
         this.contentAccounts = new ArrayList<>();
 
-        account admin = new account("admin", "admin", "admin@admin.com");
+        account admin = new account("admin", "admin");
 
-        contentcreatorAccount Bob = new contentcreatorAccount("bobiscool","bobdeman", "bob@bob.com");
+        contentcreatorAccount Bob = new contentcreatorAccount("bobiscool","bobdeman");
         Bob.setAccountInfo("Ik maak voor de lol cakejes");
         Bob.setSubscribers(11);
 
         accounts.add(admin);
 
-        contentcreatorAccount Dennis = new contentcreatorAccount("vZadelhoff","#1Geheim", "DZadelhoff@gmail.com");
+        contentcreatorAccount Dennis = new contentcreatorAccount("vZadelhoff","#1Geheim");
         Dennis.setAccountInfo("Ik stream doom eternal gameplay ");
         Dennis.setSubscribers(20);
 
 
-        contentcreatorAccount Jordy = new contentcreatorAccount("Jordy","isCool", "Jordy");
+        contentcreatorAccount Jordy = new contentcreatorAccount("Jordy","isCool");
         Jordy.setAccountInfo("Ik Film mijzelf in de sportschool! CHESTDAY");
         Jordy.setSubscribers(16);
 

@@ -1,25 +1,10 @@
 package registratie;
 
+import account.account;
+
 public class registratie{
 
-    public registratie(String username, String wachtwoord){
-
-        int isCorrect = 0;
-
-        if(inputChecker(username)){
-            isCorrect++;
-        }
-        if(checkStringSize(username)){
-            isCorrect++;
-        }
-        if(wachtwoordChecker()){
-            isCorrect++;
-        }
-
-        if(isCorrect == 3){
-            database.database.
-        }
-
+    public registratie(){
     }
 
 
@@ -74,7 +59,28 @@ public class registratie{
         return false;
     }
 
+    public boolean checkIfCorrect(String username, String wachtwoord){
+        int isCorrect = 0;
 
+        if(inputChecker(username)){
+            isCorrect++;
+        }
+        if(checkStringSize(username)){
+            isCorrect++;
+        }
+        if(wachtwoordChecker(wachtwoord)){
+            isCorrect++;
+        }
+
+        if(isCorrect == 3){
+            account account = new account(username, wachtwoord);
+            database.database.getInstance().getAccounts().add(account);
+        }
+        else{
+            return false;
+        }
+        return true;
+    }
 
 
 }
