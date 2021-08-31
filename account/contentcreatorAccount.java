@@ -6,8 +6,8 @@ public class contentcreatorAccount extends account{
     private int subscribers;
 
 
-    public contentcreatorAccount(String username, String wachtwoord, String email) {
-        super(username, wachtwoord, email);
+    public contentcreatorAccount(String username, String wachtwoord) {
+        super(username, wachtwoord);
     }
 
     public void setAccountInfo(String accountInfo) {

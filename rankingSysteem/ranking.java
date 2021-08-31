@@ -32,13 +32,11 @@ public class ranking {
 
     public void setRanking(){
         if(rank.equals("Bronze")){
-
-            if(monthsPassed >= 3 && monthsPassed < 6){
-                this.rank = "silver";
+            if(monthsPassed >= 3){
+                this.rank = "Silver";
             }
-
-            if(monthsPassed >= 9){
-                this.rank = "gold";
+            else if(monthsPassed >= 8) {
+                this.rank = "Goud" ;
             }
         }
     }
@@ -64,5 +62,9 @@ public class ranking {
     public String getDateSubscribed(){
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd LLLL yyyy");
         return this.dateSubscribed.format(formatter);
+    }
+
+    public void setMonthsPassed(int monthsPassed) {
+        this.monthsPassed = monthsPassed;
     }
 }

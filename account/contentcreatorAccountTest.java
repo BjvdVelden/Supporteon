@@ -9,7 +9,7 @@ class contentcreatorAccountTest {
 
     @Test
     void AccountInfo() {
-        contentcreatorAccount test = new contentcreatorAccount ("givanstaub", "#1Geheim", "givan@hotmail.com");
+        contentcreatorAccount test = new contentcreatorAccount ("givanstaub", "#1Geheim");
 
         test.setAccountInfo("Dit is een persoon die houd van koekjes bakken en maakt videos ervan online");
         Assert.assertEquals("Dit is een persoon die houd van koekjes bakken en maakt videos ervan online", test.getAccountInfo());
@@ -18,7 +18,7 @@ class contentcreatorAccountTest {
 
     @Test
     void Subscribers() {
-        contentcreatorAccount test = new contentcreatorAccount ("givanstaub", "#1Geheim", "givan@hotmail.com");
+        contentcreatorAccount test = new contentcreatorAccount ("givanstaub", "#1Geheim");
 
         test.setSubscribers(10);
         Assert.assertEquals(10, test.getSubscribers());
