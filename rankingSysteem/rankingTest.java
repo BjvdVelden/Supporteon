@@ -13,10 +13,10 @@ class rankingTest {
     @Test
     void testRanking(){
 
-        account testAccount = new account("test", "test", "test@test");
+        account testAccount = new account("test", "test");
         database.getInstance().addAccount(testAccount);
 
-        contentcreatorAccount contentTestAccount = new contentcreatorAccount("test","test", "test@test.com");
+        contentcreatorAccount contentTestAccount = new contentcreatorAccount("test","test");
         contentTestAccount.setAccountInfo("Test");
         contentTestAccount.setSubscribers(5);
         database.getInstance().addcontentAccount(contentTestAccount);
@@ -48,4 +48,48 @@ class rankingTest {
             }
         }
     }
+
+    @Test
+    void testcase(){
+//
+//        ranking ranking = new ranking("test");
+//
+//        ranking.setMonthsPassed(0);
+//        ranking.setRanking();
+//        Assert.assertEquals("Bronze", ranking.getRank());
+//
+//        ranking.setMonthsPassed(1);
+//        ranking.setRanking();
+//        Assert.assertEquals("Bronze", ranking.getRank());
+//
+//        ranking.setMonthsPassed(2);
+//        ranking.setRanking();
+//        Assert.assertEquals("Bronze", ranking.getRank());
+//
+//        ranking.setMonthsPassed(3);
+//        ranking.setRanking();
+//        Assert.assertEquals("Silver", ranking.getRank());
+//
+//        ranking.setMonthsPassed(4);
+//        ranking.setRanking();
+//        Assert.assertEquals("Silver", ranking.getRank());
+//
+//
+//        ranking.setMonthsPassed(8);
+//        ranking.setRanking();
+//        Assert.assertEquals("Silver", ranking.getRank());
+//
+//        ranking.setMonthsPassed(9);
+//        ranking.setRanking();
+//        Assert.assertEquals("Goud", ranking.getRank());
+//
+//
+//        ranking.setMonthsPassed(10);
+//        ranking.setRanking();
+//        Assert.assertEquals("Goud", ranking.getRank());
+//    }
+
+
+
+
 }

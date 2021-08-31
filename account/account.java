@@ -12,10 +12,9 @@ public class account {
     private ArrayList<ranking> subscribedAccounts;
 
 
-    public account(String username, String wachtwoord, String email) {
+    public account(String username, String wachtwoord) {
         this.username = username;
         this.wachtwoord = wachtwoord;
-        this.email = email;
         this. subscribedAccounts = new ArrayList<>();
     }
 
@@ -27,9 +26,6 @@ public class account {
         return wachtwoord;
     }
 
-    public String getEmail() {
-        return email;
-    }
 
     public ArrayList<ranking> getSubscribedAccounts() {
         return subscribedAccounts;
